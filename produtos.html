@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Produtos - Full Stack Eletro</title>
+    </head>
+    <body>
+        <!-- Início do menu -->
+        <nav class="menu">
+            <a href="./index.html"><img src="./imagens/logo_branco.png" alt="logo full stack eletro" width="150px"></a>
+            <a href="./produtos.html">Nossos Produtos</a>
+            <a href="./lojas.html">Nossas Lojas</a>
+            <a href="./fale_conosco.html">Fale Conosco</a>
+        </nav>
+        <!-- Fim do menu -->
+
+        <header>
+            <h2>Produtos</h2>        
+        </header>
+        <hr>
+
+        <div class="boxMain">
+            <section class="categorias">
+                <h3>Categorias</h3>
+                <ul>
+                    <li onclick="exibir('geladeira')">Geladeiras (3)</li>
+                    <li onclick="exibir('fogao')">Fogões (2)</li>
+                    <li onclick="exibir('microondas')">Microondas (1)</li>
+                    <li onclick="exibir('lavaroupas')">Lavadoura de Roupas (2)</li>
+                    <li onclick="exibir('lavaloucas')">Lava-Louças (2)</li>
+                    <li onclick="exibir('todos')">Todos</li>
+                </ul>
+            </section>
+            <section class="produtos">
+                <div class="boxProduto" id="geladeira">
+                    <img src="./imagens/Consul_Geladeira_CRE44AK_Imagem_Frontal_1.jpg" width="100px" class="imgbox"  onmousemove="ampliarImg(this)" onmouseout="diminuirImg(this)" >
+                    <br>
+                    <p class="descricao">Geladeira Consul Frost Free Duplex 397 litros Evox com freezer embaixo</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 3.479,00</strike></p>
+                    <p class="preco">R$ 2.709,00</p>
+                </div>
+                <div class="boxProduto" id="geladeira">
+                    <img src="./imagens/Brastemp_Geladeira_BRM45HK_Imagem_Frontal_1600x1400.jpg" width="100px" class="imgbox" onmouseover="ampliarImg(this)" onmouseout="diminuirImg(this)">
+                    <br>
+                    <p class="descricao">Geladeira Brastemp Frost Free Duplex 375 litros cor Inox com Espaço Adapt</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 3.479,00</strike></p>
+                    <p class="preco">R$ 2.249,10</p>
+                </div>
+                <div class="boxProduto" id="fogao">
+                    <img src="./imagens/BRBFD5VCR_PRD_447_1.jpg" width="100px" class="imgbox" onmouseover="ampliarImg(this)" onmouseout="diminuirImg(this)">
+                    <br>
+                    <p class="descricao">Fogão de Piso Brastemp de 05 Bocas com Duplo Forno e Painel Touch Inox</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 4.239,00</strike></p>
+                    <p class="preco">R$ 3.932,00</p>
+                </div>
+            <!-- </section>
+            <section class="produtos"> -->
+                <div class="boxProduto" id="microondas">
+                    <img src="./imagens/forno-de-micro-ondas-31l-electrolux-me41x_211417_7.jpg" width="100px" class="imgbox" onmouseover="ampliarImg(this)" onmouseout="diminuirImg(this)">
+                    <br>
+                    <p class="descricao">Forno de Micro-ondas Electrolux ME41X com Painel Blue Touch 31 Litros</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 1.259,00</strike></p>
+                    <p class="preco">R$ 999,00</p>
+                </div>
+                <div class="boxProduto" id="geladeira">
+                    <img src="./imagens/Geladeira Brastemp Frost Free Duplex BRM44HB 375L Branco.jpg" width="100px" class="imgbox" onmouseover="ampliarImg(this)" onmouseout="diminuirImg(this)">
+                    <br>
+                    <p class="descricao">Refrigerador Brastemp BRM44HB Frost Free com Compartimento para Latas e Long Necks Branco - 375L</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 2.499,00</strike></p>
+                    <p class="preco">R$ 2.089,05</p>
+                </div>
+                <div class="boxProduto" id="lavaloucas">
+                    <img src="./imagens/lava-loucas-14-servicos-electrolux-lv14x-inox-photo892601426-12-2c-17.jpg" width="150px" class="imgbox" onmouseover="ampliarImg(this)" onmouseout="diminuirImg(this)">
+                    <br>
+                    <p class="descricao">Lava-Louças Electrolux LV14X 14Serviços com Display Digital - Inox</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 4.349,00</strike></p>
+                    <p class="preco">R$ 3.914,10</p>
+                </div>
+            <!-- </section>
+            <section class="produtos"> -->
+                <div class="boxProduto" id="lavaloucas">
+                    <img src="./imagens/lava_loucas_febe_300x300.jpg" width="100px" class="imgbox" onmouseover="ampliarImg(this)" onmouseout="diminuirImg(this)" >
+                    <br>
+                    <p class="descricao">Lava Louças 8 Serviços 220V Cinza Brastemp</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 2.129,00</strike></p>
+                    <p class="preco">R$ 2.063,000</p>
+                </div>
+                <div class="boxProduto" id="lavaroupas">
+                    <img src="./imagens/Lavadora de Roupas LG Vivace VC4 11kg Branca.jpg" width="100px" class="imgbox" onmouseover="ampliarImg(this)" onmouseout="diminuirImg(this)">
+                    <br>
+                    <p class="descricao">Lavadora de Roupas LG Smart VC4 FV5011WG4A - 11Kg Cesto Inox 14 Programas de Lavagem</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 3.599,00</strike></p>
+                    <p class="preco">R$ 2.825,10</p>
+                </div>
+                <div class="boxProduto" id="lavaroupas">
+                    <img src="./imagens/lavadora-e-secadora-de-roupas-samsung-11kg-air-wash-e-ecobubble-branca-wd11m44530w-110v-57243-1.jpg" width="100px" class="imgbox" onmouseover="ampliarImg(this)" onmouseout="diminuirImg(this)">
+                    <br>
+                    <p class="descricao">Lava e Seca Samsung WD4000 com Ecobubble™, 11kg, Inox - WD11M4453JXFAZ 220V</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 4.499,00</strike></p>
+                    <p class="preco">R$ 3.599,10</p>
+                </div>
+                <div class="boxProduto" id="fogao">
+                    <img src="imagens/Range_76USV_Front_View_Electrolux_1000x1000.jpg" width="100px" class="imgbox" onmouseover="ampliarImg(this)" onmouseout="diminuirImg(this)">
+                    <br>
+                    <p class="descricao">Fogão de Piso Electrolux de 05 Bocas com Mesa de Vidro e Tripla Chama Prata - 76USV</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 2.849,00</strike></p>
+                    <p class="preco">R$ 2.149,00</p>
+                </div>
+            </section>
+        </div> 
+       <footer id="rodape">
+            <p id="formaDePagamento">Formas de Pagamento</p>
+            <img src="./imagens/forma de pagamento daten - logos-cartoes_.jpg" width="300px" alt="Formas de pagamento">
+            <p id="copyFooter">&copy; Recode Pro</p>
+        </footer>
+
+        <script src="./js/index.js" async ></script>
+    </body>
+</html>
